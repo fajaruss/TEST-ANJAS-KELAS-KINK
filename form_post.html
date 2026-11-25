@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MynameisAnton</title>
+  </head>
+  <body>
+    <h2>Form Input Mahasiswa (POST)</h2>
+    <form action="proses_post.php" method="post">
+
+      <label>Nama Mahasiswa:</label><br />
+      <input type="text" name="xnama" required />
+      <br><br>
+
+      <label>NIM:</label><br />
+      <input type="text" name="xnim" required /> <br><br>
+
+      <label>Alamat:</label><br />
+      <input type="text" name="xalamat" required /> <br><br>
+
+      Program Studi:<br>
+      <select name="xprodi" required>
+        <option value="Sistem Informasi">Sistem Informasi</option>
+        <option value="Manajemen Informatika">Manajemen Informatika</option>
+        <option value="Sastra Mesin">Sastra Mesin</option>
+      </select>
+
+      <br><br>
+
+      Jenis Kelamin:<br>
+      <input type="radio" name="gender" value="Laki-laki">Laki-Laki<br>
+      <input type="radio" name="gender" value="Perempuan">Perempuan<br>
+      <input type="radio" name="gender" value="Bencong">Bancong<br>
+      <input type="radio" name="gender" value="Google.com">Google.com<br>
+      <br /><br />
+
+      Hobi:<br>
+      <input type="checkbox" name="hobi[]" value="Coding">Coding<br>
+      <input type="checkbox" name="hobi[]" value="Gaming">Gaming<br>
+      <input type="checkbox" name="hobi[]" value="Membaca">Membaca<br>
+      <input type="checkbox" name="hobi[]" value="Olahraga">Olahraga<br>
+      <input type="checkbox" name="hobi[]" value="Traveling">Traveling<br>
+      <br><br>
+
+      <label>Password:</label><br />
+      <input type="password" name="xpw" required /> <br><br>
+
+      <button type="submit">Send Data</button>
+    </form>
+  </body>
+</html>
